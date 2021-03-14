@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | Cshouu</title>
+  <title>linux常用命令 | Cshouu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="1.文件处理命令ls -aldhi mkdir -p cd pwd rmdir cp -rp mv rm -rf touch cat -n tac more less head -n tail -nf ln -s 2.权限管理命令chmod -R chown chgrp umask -S 3.文件搜索命令find -exec&#x2F;-ok {} ; locate -i updatedb which wh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://cshouu.github.io/2021/03/14/hello-world/index.html">
+<meta property="og:title" content="linux常用命令">
+<meta property="og:url" content="https://cshouu.github.io/2021/03/14/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Cshouu">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1.文件处理命令ls -aldhi mkdir -p cd pwd rmdir cp -rp mv rm -rf touch cat -n tac more less head -n tail -nf ln -s 2.权限管理命令chmod -R chown chgrp umask -S 3.文件搜索命令find -exec&#x2F;-ok {} ; locate -i updatedb which wh">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-14T10:51:06.459Z">
-<meta property="article:modified_time" content="2021-03-14T10:51:06.460Z">
+<meta property="article:published_time" content="2021-03-14T14:18:25.000Z">
+<meta property="article:modified_time" content="2021-03-14T14:31:08.064Z">
+<meta property="article:tag" content="linux基础">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Cshouu" type="application/atom+xml">
@@ -72,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-linux常用命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/03/14/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-03-14T10:51:06.459Z" itemprop="datePublished">2021-03-14</time>
+    <a href="/2021/03/14/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2021-03-14T14:18:25.000Z" itemprop="datePublished">2021-03-14</time>
 </a>
     
   </div>
@@ -86,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Hello World
+      linux常用命令
     </h1>
   
 
@@ -94,42 +95,74 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h2 id="1-文件处理命令"><a href="#1-文件处理命令" class="headerlink" title="1.文件处理命令"></a><strong>1.文件处理命令</strong></h2><p>ls -aldhi</p>
+<p>mkdir -p</p>
+<p>cd</p>
+<p>pwd</p>
+<p>rmdir</p>
+<p>cp -rp</p>
+<p>mv</p>
+<p>rm -rf</p>
+<p>touch</p>
+<p>cat -n tac</p>
+<p>more less</p>
+<p>head -n tail -nf</p>
+<p>ln -s</p>
+<h2 id="2-权限管理命令"><a href="#2-权限管理命令" class="headerlink" title="2.权限管理命令"></a>2.权限管理命令</h2><p>chmod -R</p>
+<p>chown</p>
+<p>chgrp</p>
+<p>umask -S</p>
+<h2 id="3-文件搜索命令"><a href="#3-文件搜索命令" class="headerlink" title="3.文件搜索命令"></a>3.文件搜索命令</h2><p>find -exec/-ok {} ;</p>
+<p>locate -i updatedb</p>
+<p>which</p>
+<p>whereis</p>
+<p>grep -iv</p>
+<h2 id="4-帮助命令"><a href="#4-帮助命令" class="headerlink" title="4.帮助命令"></a>4.帮助命令</h2><p>man</p>
+<p>whatis</p>
+<p>apropos</p>
+<p>help</p>
+<h2 id="5-用户管理命令"><a href="#5-用户管理命令" class="headerlink" title="5.用户管理命令"></a>5.用户管理命令</h2><p>useradd</p>
+<p>passwd</p>
+<p>who w</p>
+<h2 id="6-压缩解压命令"><a href="#6-压缩解压命令" class="headerlink" title="6.压缩解压命令"></a>6.压缩解压命令</h2><p>gzip gunzip</p>
+<p>tar -cf tar -xf</p>
+<p>tar -zcf tar -zxf</p>
+<p>bzip2 bunzip2</p>
+<p>tar -jcf tar -jxf</p>
+<p>zip zip -r unzip</p>
+<h2 id="7-网络命令"><a href="#7-网络命令" class="headerlink" title="7.网络命令"></a>7.网络命令</h2><p>write wall</p>
+<p>mail</p>
+<p>ping</p>
+<p>ifconfig</p>
+<p>last lastlog</p>
+<p>traceroute</p>
+<p>netstat -tuln -an -rn</p>
+<p>红帽专有命令setup</p>
+<p>挂载命令mount</p>
+<h2 id="8-关机重启退出命令"><a href="#8-关机重启退出命令" class="headerlink" title="8.关机重启退出命令"></a>8.关机重启退出命令</h2><p>shutdown -c -h -r</p>
+<p>init</p>
+<p>logout</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cshouu.github.io/2021/03/14/hello-world/" data-id="ckm91gh740000ysvo9jx9310s" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://cshouu.github.io/2021/03/14/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="ckm9948ug0000pwvoaw8q8rgd" data-title="linux常用命令" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux%E5%9F%BA%E7%A1%80/" rel="tag">linux基础</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2021/03/14/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          linux常用命令
-        
-      </div>
-    </a>
   
+    <a href="/2021/03/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
 </nav>
 
